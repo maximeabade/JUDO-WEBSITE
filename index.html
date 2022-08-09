@@ -8,6 +8,7 @@
   <link href="css/myCss.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/myJSCompetitions.js"></script>
+  <script src="js/myJStravail_technique.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -23,35 +24,16 @@
   <p>Cours, Compétitions, Katas, Techniques à rentrer ...</p> 
 </div>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-      </li>
-      <li class="nav-item">  
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
 
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-sm-4">
+
+    <div class="col-ml-12" style="text-align:center">
         <h2>Cours semaine</h2>
             <strong>Lundi: </strong> <p>Dojo Palois - de 19h30 à 21h00</p>
             <strong>Mardi: </strong> <p>Soumoulou - de 19h30 à 21h00</p>
             <strong>Mercredi: </strong><p>Dojo Palois - de 19h00 à 21h00</p>
             <strong>Jeudi: </strong><p>Soumoulou - de 19h30 à 21h00</p>
             <strong>Vendredi: </strong><p>Judo Club Béarnais (Idron) - de 19h00 à 20h30</p>
-
+<!--competes-->
         <h2 id="slotCompetitions" >Compétitions</h2>
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="displayCompetitions(competitionsArray)" script="console.log('lala')" style="background-color:black ; border-color: black">
@@ -77,28 +59,39 @@
               </div>
             </div>
           </div>           
+          <br><br><br><br>
+<!--techniques-->        
+        <h2 id="slotTechniques">Techniques à bosser</h2>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" onclick="displayTechniques(techniquesArray)" style="background-color:black ; border-color: black">
+          Voir les Techniques à travailler
+        </button>
+      <!-- Modal -->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color:black">
+                  <h5 class="modal-title" id="exampleModalLabel1" style="color:white; background-color:black">Techniques à bosser</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white" onclick="removeTableTechniques()">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" id="techniquesContent">
 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="removeTableTechniques()">Close</button>
+                </div>
+              </div>
+            </div>
+          </div> 
 
-      <hr class="d-sm-none">
+      
     </div>
-    <div class="col-sm-8">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2020</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  
 
-      <h2 class="mt-5">TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2020</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-  </div>
-</div>
 
 <div class="mt-5 p-4 bg-dark text-white text-center">
-  <p>Footer</p>
+  <p>Ce site me permet de faire le suivi de mes activités liées au Judo <br><br>Copyright Maxime Abade 2022</p>
 </div>
 
 </body>

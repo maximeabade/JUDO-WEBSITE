@@ -25,7 +25,7 @@ date5,lieu5,nom5
 date6,lieu6,nom6
 date7,lieu7,nom7
 date8,lieu8,nom8
-date9,lieu9,nom9
+date9,lieu9,nom9 
 date10,lieu10,nom10
 date11,lieu11,nom11
 date12,lieu12,nom12
@@ -35,7 +35,7 @@ date15,lieu15,nom15
 date16,lieu16,nom16`;
 
 var myJsonCompetitons = CSVToJSON(competitionsCsv);
-console.log(CSVToJSON(competitionsCsv))
+//console.log(CSVToJSON(competitionsCsv))
 
 var competitionsArray = JSON.parse(JSON.stringify(myJsonCompetitons));
 
@@ -57,7 +57,7 @@ function displayCompetitions(competitionsArray){
     firstLine.appendChild(header3Place);
     firstLine.setAttribute("border-spacing" , "500 px")
     table.appendChild(firstLine);
-    console.log(table)
+    //console.log(table)
     emplacement.appendChild(table);
     for(var i=0 ; i<competitionsArray.length ; i++)  {
             var row = document.createElement("tr");
@@ -80,7 +80,7 @@ function displayCompetitions(competitionsArray){
         
         table.appendChild(row);
     }
-    console.log(table);
+    //console.log(table);
 }
 
 
