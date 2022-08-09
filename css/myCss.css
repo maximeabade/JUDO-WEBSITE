@@ -1,0 +1,22 @@
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+
+
+table {
+  color: rgb(0, 0, 0);
+  border-color: black;
+  border-radius: 1em;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  
+}
+
+tr {
+  border-spacing: 2 em;
+}
+th {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
