@@ -8,7 +8,8 @@
   <link href="css/myCss.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/myJSCompetitions.js"></script>
-  <script src="js/myJStravail_technique.js"></script>
+  <script src="js/myJStravail_technique.js"></script>  
+  <script src="js/myJSStages.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -60,6 +61,35 @@
             </div>
           </div>           
           <br><br><br><br>
+
+<!-- stages et examens -->
+        <h2 id="slotStages" >Stages et Examens</h2>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="displayStagesEtExamens(StagesEtExamensArray)" script="console.log('lala')" style="background-color:black ; border-color: black">
+          Voir les Dates
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header" style="background-color:black">
+                <h5 class="modal-title" id="exampleModalLabel" style="color:white; background-color:black">Stages et Examens²</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white" onclick="removeTableCompetitions()">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" id="stagesEtExamensContent">
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="removeTableCompetitions()">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>           
+        <br><br><br><br>
+
 <!--techniques-->        
         <h2 id="slotTechniques">Techniques à bosser</h2>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" onclick="displayTechniques(techniquesArray)" style="background-color:black ; border-color: black">
