@@ -21,16 +21,16 @@ const competitionsCsv = `Date,Lieu,Nom
 02/10/2022,Jurançon,Poule de 9
 07/10/2022,Grisolles,Tournoi International 
 30/10/2022,Tarbes,Tournoi des Cîmes
-08/01/2022,Orthez,Poule de 9
-22/01/2022,Agen,Championnat Secteur par Équipe
-12/03/2022,Région par Équipe, Lormont
-18/03/2022,Serres-Castet,Départementales 1ere, 2eme et 3eme DIVISION
-26/03/2022,Orthez,Poule de 9 
-08/04/2022,Paris,France par Équipe
-29/04/2022,Lormont,Région 1ere et 2eme DIVISION
-30/04/2022,Lormont,Région 2eme DIVISION
-10/06/2022,Paris,Championnat de France 2eme DIVISION
-11/06/022,Paris,Championnat de France 3eme DIVISION`;
+08/01/2023,Orthez,Poule de 9
+22/01/2023,Agen,Championnat Secteur par Équipe
+12/03/2023,Lormont,Région par Équipe
+18/03/2023,Serres-Castet,Départementales 1ere, 2eme et 3eme DIVISION
+26/03/2023,Orthez,Poule de 9 
+08/04/2023,Paris,France par Équipe
+29/04/2023,Lormont,Région 1ere et 2eme DIVISION
+30/04/2023,Lormont,Région 2eme DIVISION
+10/06/2023,Paris,Championnat de France 2eme DIVISION
+11/06/2023,Paris,Championnat de France 3eme DIVISION`;
 
 var myJsonCompetitons = CSVToJSON(competitionsCsv);
 //console.log(CSVToJSON(competitionsCsv))

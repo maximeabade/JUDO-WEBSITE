@@ -12,20 +12,17 @@ const CSVToJSON = csv => {
 
 
 const StagesEtExamensCSV = `Date,Lieu,Nom
-25/09/22,Rochefort,Tournoi Label A de Rochefort
-02/10/2022,Jurançon,Poule de 9
-07/10/2022,Grisolles,Tournoi International 
-30/10/2022,Tarbes,Tournoi des Cîmes
-08/01/2022,Orthez,Poule de 9
-22/01/2022,Agen,Championnat Secteur par Équipe
-12/03/2022,Région par Équipe, Lormont
-18/03/2022,Serres-Castet,Départementales 1ere, 2eme et 3eme DIVISION
-26/03/2022,Orthez,Poule de 9 
-08/04/2022,Paris,France par Équipe
-29/04/2022,Lormont,Région 1ere et 2eme DIVISION
-30/04/2022,Lormont,Région 2eme DIVISION
-10/06/2022,Paris,Championnat de France 2eme DIVISION
-11/06/022,Paris,Championnat de France 3eme DIVISION`;
+24/09/22,Serres-Castet,Stage arbitrage Dan
+19/11/2022,Serre-Castet,Stage Préparation Grades
+19/11/2022,Serre-Castet,Passage de Grade Expression Technique Roullet
+03/12/2022,Dax,Stage + UV2 
+10/12/2022,Jurançon,Katas
+14/01/2023,Orthez,Stage Ne-Waza
+28/01/2023,Anglet,Stage Katas + prépa Grades 
+25/02/2023,Dax,Katas
+25/03/2023,Orthez,Stage + Katas + UV2
+27/05/2023,Lormont,Katas
+28/05/2023,Lormont,Expression Technique`;
 
 var myStagesAndExamsJSON = CSVToJSON(StagesEtExamensCSV);
 //console.log(CSVToJSON(StagesEtExamensCSV))
