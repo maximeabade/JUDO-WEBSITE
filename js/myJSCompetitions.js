@@ -17,22 +17,20 @@ console.log(mesCompetitionsCSV)
 */
 
 const competitionsCsv = `Date,Lieu,Nom
-29/29/22,Rochefort,Tournoi Label A de Rochefort
-date2,lieu2,nom2
-date3,lieu3,nom3
-date4,lieu4,nom4
-date5,lieu5,nom5
-date6,lieu6,nom6
-date7,lieu7,nom7
-date8,lieu8,nom8
-date9,lieu9,nom9 
-date10,lieu10,nom10
-date11,lieu11,nom11
-date12,lieu12,nom12
-date13,lieu13,nom13
-date14,lieu14,nom14
-date15,lieu15,nom15
-date16,lieu16,nom16`;
+25/09/22,Rochefort,Tournoi Label A de Rochefort
+02/10/2022,Jurançon,Poule de 9
+07/10/2022,Grisolles,Tournoi International 
+30/10/2022,Tarbes,Tournoi des Cîmes
+08/01/2022,Orthez,Poule de 9
+22/01/2022,Agen,Championnat Secteur par Équipe
+12/03/2022,Région par Équipe, Lormont
+18/03/2022,Serres-Castet,Départementales 1ere, 2eme et 3eme DIVISION
+26/03/2022,Orthez,Poule de 9 
+08/04/2022,Paris,France par Équipe
+29/04/2022,Lormont,Région 1ere et 2eme DIVISION
+30/04/2022,Lormont,Région 2eme DIVISION
+10/06/2022,Paris,Championnat de France 2eme DIVISION
+11/06/022,Paris,Championnat de France 3eme DIVISION`;
 
 var myJsonCompetitons = CSVToJSON(competitionsCsv);
 //console.log(CSVToJSON(competitionsCsv))
