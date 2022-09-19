@@ -2,7 +2,7 @@ const techniquesATravaillerCSV = `Nom,Details
 Ipon Seoi Nage,Aller chercher plus loin en profondeur avec plus de reaction manche et revers
 Uchi Mata,Profondeur de mon deplacement + souplesse adducteurs + rotation de buste
 Kata Guruma,Reaction pourjambe et l'entrainer dans le bon sens et attaquer aussi cote manche
-Okuri Ashi Barai,Meilleure reaction pour provoquer deplacement + doubler les pas du mec en face`;
+Okuri Ashi Barai,Meilleure reaction pour provoquer deplacement + doubler les pas du mec en face + pas de Fabio Basil => 1, 2-3 FAST`;
 
 var myJsonTechniques = CSVToJSON(techniquesATravaillerCSV);
 //console.log( myJsonTechniques)
@@ -42,8 +42,4 @@ function displayTechniques(techniquesArray) {
 
 
 
-function removeTableTechniques() {
-    var body = document.getElementById("techniquesContent");
-    var table = document.getElementById("techniques_table");
-    body.removeChild(table);
-}
+function removeTableTechniques() {document.getElementById("techniquesContent").removeChild(document.getElementById("techniques_table"));}
